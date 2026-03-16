@@ -199,7 +199,7 @@ public class BuildPostprocessors
 #if UNITY_6000_0_OR_NEWER
 		if (UnityEditor.Android.UserBuildSettings.DebugSymbols.level == Unity.Android.Types.DebugSymbolLevel.None)
 #else
-		if (EditorUserBuildSettings.androidCreateSymbols == AndroidCreateSymbols.None)
+		if (EditorUserBuildSettings.androidCreateSymbols == AndroidCreateSymbols.Disabled)
 #endif
 		{
 			Debug.LogWarning("BugSplat. Skipping symbols uploading since \"Debug Symbols\" is set to None in BuildSettings->Android.");
